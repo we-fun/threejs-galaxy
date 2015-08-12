@@ -1,4 +1,4 @@
-
+'use strict'
 var clock = new THREE.Clock(false)
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
@@ -96,7 +96,8 @@ function createBall(m, R, p, v, c){
   //ball.a0 = ball.a.clone()
   //ball.v0 = ball.v.clone()
   ball._ = []
-  ball.id = '' + Math.random()
+  //Cannot assign to read only property 'id' of [object Object]
+  // ball.id = '' + Math.random()
   return ball;
 }
 
