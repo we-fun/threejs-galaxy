@@ -1,4 +1,4 @@
-
+'use strict'
 var clock = new THREE.Clock(false)
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
@@ -153,7 +153,7 @@ function calc(){
           )
         ).normalize().multiplyScalar(vv)
     }
-    
+
     // 更新自转
     b.rotation.x += b.vr.x * dt
     b.rotation.y += b.vr.y * dt
